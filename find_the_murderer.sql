@@ -27,12 +27,12 @@ WHERE person_id = 16371
 -- has a membership id that includes '48Z', plate number also include 'H42W',
 -- and went to the gym on '2018-01-09' 
 
-    WITH cte_person AS
-    (
-        SELECT * FROM person p
-        JOIN drivers_license dl
-        ON p.license_id = dl.id
-    )
+WITH cte_person AS
+  (
+      SELECT * FROM person p
+      JOIN drivers_license dl
+      ON p.license_id = dl.id
+  )
 
 SELECT cp.*
 FROM get_fit_now_member m
