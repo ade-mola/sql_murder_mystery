@@ -12,7 +12,7 @@ WHERE city = 'SQL City'
 
 SELECT *
 FROM person
-WHERE (name LIKE '%Annabel%' and address_street_name LIKE 'Franklin Ave')
+WHERE (name LIKE '%Annabel%' AND address_street_name LIKE 'Franklin Ave')
    OR address_street_name LIKE 'Northwestern Dr'
 ORDER BY address_street_name, address_number DESC;
 
@@ -41,8 +41,8 @@ FROM get_fit_now_member m
          JOIN get_fit_now_check_in ci
               ON m.id = ci.membership_id
 WHERE m.membership_status = 'gold'
-  and ci.check_in_date = '20180109'
-  and m.id like '%48Z%'
-  and cp.plate_number like '%H42W%';
+  AND ci.check_in_date = '20180109'
+  AND m.id LIKE '%48Z%'
+  AND cp.plate_number LIKE '%H42W%';
 
 -- Finally! The murderer has been unmasked and his name is JEREMY BOWERS!
