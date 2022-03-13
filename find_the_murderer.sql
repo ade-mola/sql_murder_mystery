@@ -1,8 +1,8 @@
--- We start by check the 'crime_scene_report' table to get details of the murder narrowing down to 'SQL City'
+-- We start by checking the 'crime_scene_report' table to get details of the murder narrowing down to 'SQL City'
 -- and on 2018-01-15
 
 SELECT * FROM crime_scene_report
-WHERE city = 'SQL City' AND DATE = '20180115'
+WHERE city = 'SQL City' AND date = '20180115'
 
 -- Result from query showed there were two witnesses. One witness lives in the last house on 'Northwestern Dr'
 -- Second witness is named 'Annabel' and lives on 'Franklin Ave'
